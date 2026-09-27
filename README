@@ -1,0 +1,16 @@
+# MiniML AST Parser
+
+This is a parser and Abstract Syntax Tree (AST) builder for MiniML, written completely in Python. Built to see how compiler frontends work under the hood.
+
+It basically takes raw MiniML code, breaks it down into tokens, and maps it into custom AST node classes so the expressions can be evaluated.
+
+### Files
+* `lexer.py` - handles breaking the raw text into tokens
+* `parser.py` - contains the logic to build the actual tree
+* `ast.py` - defines the custom node classes
+
+### How to use
+Just run the main file and pass in your MiniML text:
+
+```bash
+python parser.py input.txt
